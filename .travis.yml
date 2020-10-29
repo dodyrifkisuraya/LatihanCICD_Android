@@ -29,7 +29,7 @@ script:
 
 deploy:
   provider: releases
-  api-key: $GITHUB_APIKEY
+  api_key: $GITHUB_APIKEY
   file: $TRAVIS_BUILD_DIR/app/build/outputs/apk/release/app-release.apk
   skip_cleanup: true
   name: dev-build-$TRAVIS_TAG
